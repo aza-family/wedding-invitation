@@ -86,11 +86,9 @@ export default {
   computed: {
     getImageSrc() {
       return one;
-      //return "https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro.png";
     },
     getThumbnailSrc() {
       return one;
-      //return "https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro_min.jpg";
     },
   },
 };

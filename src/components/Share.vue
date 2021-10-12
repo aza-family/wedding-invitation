@@ -98,7 +98,7 @@ export default {
         return;
       }
 
-      doCopyCommand("https://ryuliah.netlify.app/#/");
+      doCopyCommand("https://aza-family.github.io/wedding-invitation");
 
       this.snackbarText = "URL이 복사 되었습니다 :)";
       this.snackbarColor = "primary";
@@ -111,16 +111,17 @@ export default {
         content: {
           title: "세화+량실 저희 결혼합니다.",
           description: "2021년 11월 21일 오후 2시 30분, 금오산호텔",
-          imageUrl: "https://ryuliah.netlify.app/images/day_intro.png",
+          imageUrl:
+            "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/1.jpg",
           link: {
-            mobileWebUrl: "https://ryuliah.netlify.app/#/",
+            mobileWebUrl: "https://aza-family.github.io/wedding-invitation",
           },
         },
         buttons: [
           {
             title: "한땀한땀 만든 청첩장 바로GO!",
             link: {
-              mobileWebUrl: "https://ryuliah.netlify.app/#/",
+              mobileWebUrl: "https://aza-family.github.io/wedding-invitation",
             },
           },
         ],

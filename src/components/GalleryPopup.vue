@@ -31,22 +31,6 @@
 
 <script>
 import images from "@/utils/images";
-//const GALLERY_FILE_LENGTH = 21;
-
-//const initGalleryData = () => {
-//    const items = [];
-//    const imagePath = 'https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/gallery';//'images/gallery'
-//    const imageExtension = 'jpg';
-//
-//    for (let i = 1; i <= GALLERY_FILE_LENGTH; i++) {
-//        items.push({
-//            src: `${imagePath}/p${i}.${imageExtension}`
-//        })
-//    }
-//
-//    return items;
-//}
-// initGalleryData();
 
 export default {
   name: "GalleryPopup",
