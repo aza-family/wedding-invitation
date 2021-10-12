@@ -1,13 +1,12 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ],
-  chainWebpack: config => {
-    config
-        .plugin('html')
-        .tap(args => {
-          args[0].title = "Daliah & SeokRyu Wedding";
-          return args;
-        })
-  }
-}
+  publicPath: "./",
+  outputDir: "docs/",
+  runtimeCompiler: true,
+  transpileDependencies: ["vuetify"],
+  chainWebpack: (config) => {
+    config.plugin("html").tap((args) => {
+      args[0].title = "Ryang & Sehwa Wedding";
+      return args;
+    });
+  },
+};

@@ -1,267 +1,117 @@
 <template>
-    <v-responsive id="intro" class="custom-content-container">
-        <div class="d-flex flex-row-reverse ma-4">
-            <v-btn
-                    color="primary"
-                    icon
-                    outlined
-                    @click="isVisibleSettingDialog = true"
-            >
-                <v-icon>
-                    mdi-cog-outline
-                </v-icon>
-            </v-btn>
-        </div>
-        <v-responsive class="description-container">
-            <div class="title-container text-type-black text-type-16 line-height-24 text-align-center">
-                {{ $t('view.intro.header') }}
-            </div>
-            <div class="text-type-olive text-type-28 text-align-center">
-                {{ $t('view.intro.GloomAndBride') }}
-            </div>
-        </v-responsive>
-        <v-img :src="getImageSrc()" :lazy-src="getThumbnailSrc()" class=""></v-img>
-        <!-- Setting dialog -->
-        <v-dialog
-                v-model="isVisibleSettingDialog"
-                min-width="312"
-                max-width="600"
-        >
-            <v-card>
-                <v-card-title class="text-h5">
-                    {{ $t('view.intro.Settings') }}
-                </v-card-title>
-                <v-card-text v-if="!isMobile()">
-                    <div class="d-flex justify-space-around mt-4">
-                        <div>
-                            <v-btn-toggle
-                                    v-model="theme"
-                                    mandatory
-                            >
-                                <v-btn>
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-weather-night
-                                    </v-icon>
-                                    Dark
-                                </v-btn>
-                                <v-btn >
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-weather-sunny
-                                    </v-icon>
-                                    Light
-                                </v-btn>
-                            </v-btn-toggle>
-                        </div>
-                        <div>
-                            <v-btn-toggle
-                                    v-model="language"
-                                    mandatory
-                            >
-                                <v-btn>
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-alphabetical-variant
-                                    </v-icon>
-                                    English
-                                </v-btn>
-                                <v-btn >
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-syllabary-hangul
-                                    </v-icon>
-                                    한국어
-                                </v-btn>
-                            </v-btn-toggle>
-                        </div>
-                    </div>
-                </v-card-text>
-                <v-card-text v-if="isMobile()">
-                    <div class="mt-4">
-                        <div>
-                            <v-btn-toggle
-                                    v-model="theme"
-                                    mandatory
-                            >
-                                <v-btn>
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-weather-night
-                                    </v-icon>
-                                    Dark
-                                </v-btn>
-                                <v-btn >
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-weather-sunny
-                                    </v-icon>
-                                    Light
-                                </v-btn>
-                            </v-btn-toggle>
-                        </div>
-                        <v-spacer class="mt-2"></v-spacer>
-                        <div>
-                            <v-btn-toggle
-                                    v-model="language"
-                                    mandatory
-                            >
-                                <v-btn>
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-alphabetical-variant
-                                    </v-icon>
-                                    English
-                                </v-btn>
-                                <v-btn >
-                                    <v-icon
-                                            left
-                                    >
-                                        mdi-syllabary-hangul
-                                    </v-icon>
-                                    한국어
-                                </v-btn>
-                            </v-btn-toggle>
-                        </div>
-                    </div>
-                </v-card-text>
-                <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                            text
-                            @click="isVisibleSettingDialog = false"
-                    >
-                        {{ $t('view.intro.cancel') }}
-                    </v-btn>
-
-                    <v-btn
-                            color="primary"
-                            text
-                            v-on:click="changeSettings"
-                    >
-                        {{ $t('view.intro.ok') }}
-                    </v-btn>
-                </v-card-actions>
-            </v-card>
-        </v-dialog>
-        <v-dialog v-model="isVisibleNoticeDialog"
-                  v-if="this.language === 1"
-                  persistent
-                  max-width="320"
-        >
-            <v-card>
-                <v-card-title class="text-h5">
-                    {{ $t('view.intro.noticeDialog.title')}}
-                </v-card-title>
-                <v-card-text>
-                    {{ $t('view.intro.noticeDialog.content_1')}} <br>
-                    {{ $t('view.intro.noticeDialog.content_2')}}
-                </v-card-text>
-                <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                            color="primary"
-                            text
-                            @click="isVisibleNoticeDialog = false"
-                    >
-                        {{ $t('view.intro.noticeDialog.close') }}
-                    </v-btn>
-                </v-card-actions>
-            </v-card>
-        </v-dialog>
+  <v-responsive id="intro" class="custom-content-container">
+    <!-- <div class="d-flex flex-row-reverse ma-4">
+      <v-btn
+        color="primary"
+        icon
+        outlined
+        @click="isVisibleSettingDialog = true"
+      >
+        <v-icon>
+          mdi-cog-outline
+        </v-icon>
+      </v-btn>
+    </div> -->
+    <v-responsive class="description-container custom-ma">
+      <div
+        class="title-container text-type-black text-type-16 line-height-24 text-align-center"
+      >
+        {{ $t("view.intro.header") }}
+      </div>
+      <div class="text-type-olive text-type-28 text-align-center">
+        {{ $t("view.intro.GloomAndBride") }}
+      </div>
     </v-responsive>
+    <v-img :src="getImageSrc" :lazy-src="getThumbnailSrc" class=""></v-img>
+  </v-responsive>
 </template>
 
 <script>
-    import { isDarkTheme, getLocale, setLocale, setTheme, isMobile } from '@/utils';
+import { getLocale, setLocale, setTheme, isMobile } from "@/utils";
+import one from "@/assets/1.jpg";
+//const convertThemeToNumber = (isDark) => {
+//  // console.log(`isDark ${isDark}`);
+//  return isDark ? 0 : 1;
+//};
 
-    const convertThemeToNumber = (isDark) => {
-        // console.log(`isDark ${isDark}`);
-        return isDark ? 0 : 1;
-    }
+const convertLocaleToNumber = (locale) => {
+  // console.log(`locale ${locale}`);
+  return locale !== "ko" ? 0 : 1;
+};
 
-    const convertLocaleToNumber = (locale) => {
-        // console.log(`locale ${locale}`);
-        return locale !== 'ko' ? 0 : 1;
-    }
+export default {
+  name: "Intro",
+  data: () => ({
+    //isVisibleSettingDialog: false,
+    //isVisibleNoticeDialog: true,
+    //theme: convertThemeToNumber(isDarkTheme()),
+    theme: false,
+    language: convertLocaleToNumber(getLocale()),
+  }),
+  methods: {
+    isMobile: isMobile,
+    changeSettings() {
+      let locale;
 
-    export default {
-        name: "Intro",
-        data: () => ({
-            isVisibleSettingDialog: false,
-            isVisibleNoticeDialog: true,
-            switch1: true,
-            theme: convertThemeToNumber(isDarkTheme()),
-            language: convertLocaleToNumber(getLocale()),
-        }),
-        methods: {
-            isMobile: isMobile,
-            changeSettings() {
-                let locale;
+      switch (this.language) {
+        case 0:
+          locale = "en";
+          break;
+        case 1:
+          locale = "ko";
+          break;
+        default:
+          locale = "en";
+      }
 
-                switch (this.language) {
-                    case 0:
-                        locale = 'en';
-                        break;
-                    case 1:
-                        locale = 'ko';
-                        break;
-                    default:
-                        locale = 'en';
-                }
+      let darkTheme;
+      switch (this.theme) {
+        case 0:
+          darkTheme = true;
+          break;
+        case 1:
+          darkTheme = false;
+          break;
+        default:
+          darkTheme = false;
+      }
 
-                let darkTheme;
-                switch (this.theme) {
-                    case 0:
-                        darkTheme = true;
-                        break;
-                    case 1:
-                        darkTheme = false;
-                        break;
-                    default:
-                        darkTheme = false;
-                }
+      setLocale(this, locale);
+      setTheme(darkTheme);
+      this.$vuetify.theme.dark = darkTheme;
 
-                setLocale(this, locale)
-                setTheme(darkTheme)
-                this.$vuetify.theme.dark = darkTheme;
-
-                this.isVisibleSettingDialog = false;
-            },
-            getImageSrc() {
-                const lightImage = 'https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro.png';//'images/day_intro.png';
-                const darkImage = 'https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/gallery/p9.jpg';//'images/gallery/p9.jpg';
-
-                return isDarkTheme() ? darkImage: lightImage;
-            },
-            getThumbnailSrc() {
-                const lightImage = 'https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro_min.jpg';
-                const darkImage = 'https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/gallery/p9.jpg';
-
-                return isDarkTheme() ? darkImage: lightImage;
-            }
-        }
-    }
+      this.isVisibleSettingDialog = false;
+    },
+  },
+  computed: {
+    getImageSrc() {
+      return one;
+      //return "https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro.png";
+    },
+    getThumbnailSrc() {
+      return one;
+      //return "https://raw.githubusercontent.com/Seok-Ryu/by_vue/master/public/images/day_intro_min.jpg";
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
-    .custom-content-container {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
+.custom-content-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
-    .description-container {
-        /*height: 132px;*/
-    }
+.custom-ma {
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
 
-    .title-container {
-        /*margin-top: 48px;*/
-    }
+//.description-container {
+//  /*height: 132px;*/
+//}
+//
+//.title-container {
+//  /*margin-top: 48px;*/
+//}
 </style>
