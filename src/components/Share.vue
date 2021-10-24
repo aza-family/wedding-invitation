@@ -81,7 +81,7 @@ export default {
 
       // eslint-disable-next-line no-undef
       // eslint-disable-next-line no-undef
-      Kakao.init("194d203f9fed44b8d0edf6c4158b8863");
+      Kakao.init("9723055325a47afca011eebf534ec5be");
       // eslint-disable-next-line no-undef
       Kakao.isInitialized();
       // eslint-disable-next-line no-undef
@@ -112,7 +112,7 @@ export default {
           title: "세화+량실 저희 결혼합니다.",
           description: "2021년 11월 21일 오후 2시 30분, 금오산호텔",
           imageUrl:
-            "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/1.jpg",
+            "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/02.png",
           link: {
             mobileWebUrl: "https://aza-family.github.io/wedding-invitation",
           },

@@ -28,7 +28,10 @@
 
 <script>
 import { getLocale, setLocale, setTheme, isMobile } from "@/utils";
-import one from "@/assets/1.jpg";
+//import one from "@/assets/1.jpg";
+//import one from "@/assets/01.png";
+//import one from "@/assets/02.png";
+import one from "@/assets/02.png";
 //const convertThemeToNumber = (isDark) => {
 //  // console.log(`isDark ${isDark}`);
 //  return isDark ? 0 : 1;

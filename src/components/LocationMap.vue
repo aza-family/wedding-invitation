@@ -14,7 +14,7 @@
     <v-responsive class="d-flex button-container">
       <v-row class="" justify="space-between" cols="12">
         <v-col class="col-6">
-          <v-btn
+          <!-- <v-btn
             class="elevation-0 custom-button"
             block
             :large="true"
@@ -23,7 +23,7 @@
             v-on:click="onClickCalendarEvent"
           >
             {{ $t("view.locationMap.addCalendar") }}
-          </v-btn>
+          </v-btn>-->
         </v-col>
         <v-col class="col-6">
           <v-btn
@@ -31,7 +31,7 @@
             block
             color="primary"
             :large="true"
-            href="http://kko.to/uepuFiT4o"
+            href="https://map.kakao.com/?urlX=794834.0&urlY=727681.0&name=%EA%B8%88%EC%98%A4%EC%82%B0%ED%98%B8%ED%85%94"
             target="_blank"
           >
             {{ $t("view.locationMap.showMap") }}
@@ -86,14 +86,15 @@ export default {
       const bounds = new kakao.maps.LatLngBounds();
       const markerOfWeddingLocation = this.createMarker(
         bounds,
-        37.5213786,
-        126.9838787,
+        //36.11024731756055, 128.3097812883539
+        36.11024731756055,
+        128.3097812883539,
         "WED"
       );
       const markerOfStation = this.createMarker(
         bounds,
-        37.5221786,
-        126.9758787
+        36.11024731756055,
+        128.3097812883539
       );
 
       markerOfWeddingLocation.setMap(this.map);
