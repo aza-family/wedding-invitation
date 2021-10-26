@@ -109,7 +109,7 @@ export default {
       Kakao.Link.sendDefault({
         objectType: "feed",
         content: {
-          title: "세화+량실 저희 결혼합니다.",
+          title: "세화&량실 저희 결혼합니다.",
           description: "2021년 11월 21일 오후 2시 30분, 금오산호텔",
           imageUrl:
             "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/02.png",
