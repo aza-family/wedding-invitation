@@ -32,16 +32,17 @@
       </div>
     </div>
     <!-- <div class="mt-8">
-            <v-btn
-                    class="elevation-0 custom-button"
-                    block
-                    :large="true"
-                    color="primary"
-                    v-on:click="linkTo"
-            >
-                {{ $t('view.story.moreStory') }}
-            </v-btn>
-        </div>-->
+      <v-btn
+        class="elevation-0 custom-button"
+        block
+        :large="true"
+        color="primary"
+        v-on:click="linkTo"
+      >
+        {{ $t("view.story.moreStory") }}
+      </v-btn>
+    </div> -->
+
     <v-snackbar
       :top="true"
       v-model="isOpenSnackbar"
@@ -73,10 +74,7 @@ export default {
     linkTo() {
       // eslint-disable-next-line no-undef
       gtag("event", "more_story");
-      window.open(
-        "https://pastoral-airmail-dda.notion.site/48682e04f2f74fb58fb267da077ffe32",
-        "_self"
-      );
+      window.open("https://www.instagram.com/riastagram___6/", "_self");
     },
   },
 };

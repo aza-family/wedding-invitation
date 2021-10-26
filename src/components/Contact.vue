@@ -32,26 +32,19 @@
               mdi-message-outline
             </v-icon>
           </v-btn>
-          <!--<v-btn
-            color="primary"
-            text
-            small
-            href="https://qr.kakaopay.com/9723055325a47afca011eebf534ec5be"
-            target="_blank"
-            v-if="false"
-          >
-            Kakao-Pay
-          </v-btn>
           <v-btn
             color="primary"
             text
             small
             v-on:click="
-              linkTo($options.LINK_TYPE.TOSS, 'https://toss.im/_m/vXxikPiB')
+              linkToV2(
+                $options.LINK_TYPE.TOSS,
+                'https://www.facebook.com/negabaro'
+              )
             "
           >
-            TOSS
-          </v-btn> -->
+            Facebook
+          </v-btn>
         </div>
       </div>
       <div class="text-type-black text-type-16">
@@ -60,7 +53,7 @@
           <span
             style="cursor: pointer;"
             class="font-weight-bold"
-            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01029504069')"
+            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01035393778')"
           >
             {{ $t("view.contact.gloomFatherMobile") }}
           </span>
@@ -70,7 +63,7 @@
           <span
             style="cursor: pointer;"
             class="font-weight-bold"
-            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01024844069')"
+            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01093539129')"
           >
             {{ $t("view.contact.gloomMotherMobile") }}
           </span>
@@ -111,14 +104,30 @@
         <div class="text-type-16-500">
           {{ $t("view.contact.bride") }}
         </div>
+        <div class="icon-area d-flex">
+          <v-btn
+            color="primary"
+            text
+            small
+            v-on:click="
+              linkToV2(
+                $options.LINK_TYPE.TOSS,
+                'https://www.facebook.com/suzumi.ryangshil.tei'
+              )
+            "
+          >
+            Facebook
+          </v-btn>
+        </div>
       </div>
+
       <div class="text-type-black text-type-16">
         <div class="pt-5">
           <span class="pr-4">{{ $t("view.contact.brideFather") }}</span>
           <span
             style="cursor: pointer;"
             class="font-weight-bold"
-            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01028750246')"
+            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01093539129')"
           >
             {{ $t("view.contact.brideFatherMobile") }}
           </span>
@@ -128,7 +137,7 @@
           <span
             style="cursor: pointer;"
             class="font-weight-bold"
-            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01043230246')"
+            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01093539129')"
           >
             {{ $t("view.contact.brideMotherMobile") }}
           </span>
@@ -200,6 +209,9 @@ export default {
         return;
       }
 
+      window.open(target);
+    },
+    linkToV2(type, target) {
       window.open(target);
     },
   },
