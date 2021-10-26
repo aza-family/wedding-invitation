@@ -22,3 +22,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+https://aza-family.github.io/wedding-invitation/#/
+https://bit.ly/30RYEjV

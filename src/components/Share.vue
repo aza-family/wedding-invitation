@@ -98,7 +98,7 @@ export default {
         return;
       }
 
-      doCopyCommand("https://aza-family.github.io/wedding-invitation");
+      doCopyCommand("https://bit.ly/30RYEjV");
 
       this.snackbarText = "URL이 복사 되었습니다 :)";
       this.snackbarColor = "primary";

@@ -11,7 +11,7 @@
             text
             color="primary"
             small
-            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01097371233')"
+            v-on:click="linkTo($options.LINK_TYPE.CALL, 'tel:01093539129')"
           >
             <v-icon size="18">
               mdi-phone-in-talk-outline
@@ -24,7 +24,7 @@
             v-on:click="
               linkTo(
                 $options.LINK_TYPE.KAKAO_TALK,
-                'http://qr.kakao.com/talk/geQ_Uj1WiGWinLXTpeX8CjC9lTY-'
+                'http://qr.kakao.com/talk/S4ECKD3I67CkCIwuBRyTAZIMKAU-'
               )
             "
           >
