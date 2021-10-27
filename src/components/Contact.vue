@@ -57,6 +57,17 @@
           >
             {{ $t("view.contact.gloomFatherMobile") }}
           </span>
+          <span class="pl-2"
+            >계좌:
+            {{ $t("view.contact.gloomFatherBankAccountName") }}
+          </span>
+          <span
+            class="text-decoration-underline"
+            style="cursor: pointer;"
+            v-on:click="copyAccountInfo"
+          >
+            {{ $t("view.contact.gloomFatherBankAccount") }}
+          </span>
         </div>
         <div class="">
           <span class="pr-4">{{ $t("view.contact.gloomMother") }}</span>
@@ -67,8 +78,19 @@
           >
             {{ $t("view.contact.gloomMotherMobile") }}
           </span>
+          <span class="pl-2"
+            >계좌:
+            {{ $t("view.contact.gloomMotherBankAccountName") }}
+          </span>
+          <span
+            class="text-decoration-underline"
+            style="cursor: pointer;"
+            v-on:click="copyAccountInfo"
+          >
+            {{ $t("view.contact.gloomMotherBankAccount") }}
+          </span>
         </div>
-        <div class="">
+        <!--<div class="">
           <span
             class="text-decoration-underline"
             style="cursor: pointer;"
@@ -77,7 +99,7 @@
             {{ $t("view.contact.gloomBankAccount") }}
           </span>
           <span>&nbsp;{{ $t("view.contact.gloomBankAccountName") }}</span>
-        </div>
+        </div> -->
       </div>
     </div>
     <v-snackbar
