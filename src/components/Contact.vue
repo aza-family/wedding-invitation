@@ -57,8 +57,8 @@
           >
             {{ $t("view.contact.gloomFatherMobile") }}
           </span>
-          <span class="pl-2"
-            >계좌:
+          <br />
+          <span class="pl-custom">
             {{ $t("view.contact.gloomFatherBankAccountName") }}
           </span>
           <span
@@ -78,8 +78,8 @@
           >
             {{ $t("view.contact.gloomMotherMobile") }}
           </span>
-          <span class="pl-2"
-            >계좌:
+          <br />
+          <span class="pl-custom">
             {{ $t("view.contact.gloomMotherBankAccountName") }}
           </span>
           <span
@@ -241,6 +241,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.pl-custom {
+  padding-left: 64px;
+}
 .custom-text-button {
   /*font-size: 16px*/
   /*font-weight: 300;*/
