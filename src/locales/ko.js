@@ -1,7 +1,7 @@
 export default {
   view: {
     intro: {
-      GloomAndBride: "세화 & 량실",
+      GloomAndBride: "세화 ♡ 량실",
       header: "모바일 청첩장",
       Settings: "설정",
       ok: "확인",
@@ -17,7 +17,8 @@ export default {
     locationMap: {
       description: "저희 결혼식 피로연에 초대합니다 -",
       date: "2021년 11월 21일 오후 2시 30분",
-      location: "경상북도 구미시 금오산로 400(남통동 산24-9번지) 금오산호텔",
+      location: "구미시 금오산로 400(남통동 산24-9번지)",
+      location2: "금오산호텔 2층 그랜드볼룸 홀",
       addCalendar: "캘린더 등록",
       showMap: "카카오맵 보기",
       close: "닫기",
@@ -27,11 +28,14 @@ export default {
     },
     notice: {
       notice: "안내사항",
-      noticeText_0:
-        "일본에서 결혼식 예정입니다. 코로나 영향으로 한국에 갈 수 없어 라이브 스트리밍으로 피로연을 진행할 예정인점 양해부탁드립니다.",
-      noticeText_1: "",
-      noticeText_2: "",
-      noticeText_3: "",
+      noticeText_0: "",
+      noticeText_1:
+        "같은시간대에 일본 쉐라톤 그랜드 도쿄 베이 호텔에서 결혼식을 합니다.",
+      noticeText_2:
+        "코로나로 인한 일본정부의 입출금 금지 조치로 한국에 계신 부모님과 친지들을 모시지 못하고 예식을 치루게 된점 널리 양해해주시면 감사하겠습니다.",
+      noticeText_3:
+        "인생의 첫 출발인만큼 한국인의 자부심으로 열심히 잘 살겠습니다.",
+
       byCar: "🚗 자차로 오신다면",
       byCarText_1:
         "경부고속도로 구미 IC진입 → IC통과 후 좌회전 → 33번 국도로 약4km 직진",
@@ -62,9 +66,9 @@ export default {
     },
     contact: {
       gloom: "신랑 김세화",
-      gloomFather: "김석호",
+      gloomFather: "父 김석호",
       gloomFatherMobile: "010-3539-3778",
-      gloomMother: "이종희",
+      gloomMother: "母 이종희",
       gloomMotherMobile: "010-9353-9129",
       gloomBankAccount: "741013-52056087",
       gloomBankAccountName: "농협",
@@ -73,9 +77,9 @@ export default {
       gloomMotherBankAccount: "057-08-0390807",
       gloomMotherBankAccountName: "대구은행",
       bride: "신부 정량실",
-      brideFather: "정철진",
+      brideFather: "父 정철진",
       brideFatherMobile: "",
-      brideMother: "윤봉임",
+      brideMother: "母 윤봉임",
       brideMotherMobile: "",
       brideFatherBankAccount: "",
       brideFatherBankAccountName: "",

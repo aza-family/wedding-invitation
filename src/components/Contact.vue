@@ -242,7 +242,7 @@ export default {
 
 <style scoped lang="scss">
 .pl-custom {
-  padding-left: 64px;
+  padding-left: 82px;
 }
 .custom-text-button {
   /*font-size: 16px*/

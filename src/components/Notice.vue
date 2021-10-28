@@ -36,20 +36,15 @@
         <span>{{ $t("view.notice.byCarText_3") }}</span>
       </div>
     </div>
-    <div class="subtext-container text-type-black text-type-16-500">
+    <!-- <div class="subtext-container text-type-black text-type-16-500">
       {{ $t("view.notice.byPublic") }}
     </div>
     <div class="text-type-black text-type-16">
       <div>
-        <!-- <span class="text-type-olive">1 /  </span>-->
         <span>{{ $t("view.notice.byPublicText_1") }}</span>
       </div>
-      <!-- <div>
-                <span class="text-type-olive">2 /  </span>
-                <span>{{ $t('view.notice.byPublicText_2') }}</span>
-            </div>-->
-    </div>
-    <div class="subtext-container text-type-black text-type-16-500">
+    </div> -->
+    <!--  <div class="subtext-container text-type-black text-type-16-500">
       {{ $t("view.notice.byShuttle") }}
     </div>
     <div class="text-type-black text-type-16">
@@ -75,7 +70,7 @@
       <div>
         {{ $t("view.notice.byShuttleRoute_2") }}
       </div>
-    </div>
+    </div> -->
     <div class="subtext-container text-type-black text-type-16-500">
       {{ $t("view.notice.dining") }}
     </div>

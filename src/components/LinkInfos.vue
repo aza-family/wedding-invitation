@@ -38,7 +38,7 @@ const updateSigninStatus = (isSignedIn) => {
 
 const addNewEvent = () => {
   var event = {
-    summary: "세화 + 정량실 결혼식",
+    summary: "세화 ♡ 량실 결혼식",
     location: "구미시 금호산호텔",
     description: "옷차림은 편하게, 마음은 가볍게, 10분일찍 오시면 좋아요",
     start: {

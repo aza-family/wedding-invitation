@@ -10,6 +10,9 @@
     <div class="text-type-olive text-type-20">
       {{ $t("view.locationMap.location") }}
     </div>
+    <div class="text-type-olive text-type-20">
+      {{ $t("view.locationMap.location2") }}
+    </div>
     <div class="map-container" ref="mapContainer"></div>
     <v-responsive class="d-flex button-container">
       <v-row class="" justify="space-between" cols="12">
@@ -205,7 +208,7 @@ export default {
     },
     addNewEvent() {
       const event = {
-        summary: "김세화 + 정량실 결혼식",
+        summary: "김세화 ♡ 정량실 결혼식",
         location: "구미시 금오산호텔",
         description: "옷차림은 편하게, 마음은 가볍게, 10분일찍 오시면 좋아요",
         start: {

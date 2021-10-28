@@ -25,3 +25,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 https://aza-family.github.io/wedding-invitation/#/
 https://bit.ly/30RYEjV
+
+
+## reference
+
+https://mcard.fromtoday.co.kr/w/1V0dPp/
