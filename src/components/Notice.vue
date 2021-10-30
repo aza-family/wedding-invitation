@@ -18,6 +18,9 @@
       <div>
         {{ $t("view.notice.noticeText_3") }}
       </div>
+      <div>
+        {{ $t("view.notice.noticeText_4") }}
+      </div>
     </div>
     <div class="subtext-container text-type-black text-type-16-500">
       {{ $t("view.notice.byCar") }}
