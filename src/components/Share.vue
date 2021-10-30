@@ -114,14 +114,14 @@ export default {
           imageUrl:
             "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/02.png",
           link: {
-            mobileWebUrl: "https://aza-family.github.io/wedding-invitation",
+            mobileWebUrl: "https://bit.ly/30RYEjV",
           },
         },
         buttons: [
           {
             title: "한땀한땀 만든 청첩장 바로GO!",
             link: {
-              mobileWebUrl: "https://aza-family.github.io/wedding-invitation",
+              mobileWebUrl: "https://bit.ly/30RYEjV",
             },
           },
         ],
