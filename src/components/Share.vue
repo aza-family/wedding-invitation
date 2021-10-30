@@ -106,6 +106,14 @@ export default {
     },
     sendKakaoMessage() {
       // eslint-disable-next-line no-undef
+      Kakao.Link.sendCustom({
+        templateId: 64400, // 복사해둔 템플릿 ID
+        templateArgs: {
+          thu:
+            "https://raw.githubusercontent.com/aza-family/wedding-invitation/master/public/images/02.png",
+        },
+      });
+      /*
       Kakao.Link.sendDefault({
         objectType: "feed",
         content: {
@@ -126,7 +134,7 @@ export default {
             },
           },
         ],
-      });
+      }); */
     },
   },
 };

@@ -30,3 +30,5 @@ https://bit.ly/30RYEjV
 ## reference
 
 https://mcard.fromtoday.co.kr/w/1V0dPp/
+https://github.com/Seok-Ryu/by_vue/?fbclid=IwAR05BP3Bv7ELyJNPZ3JWMNe1uf6ACLd8-Av4MSjkQ87BrHGGTgMC0EzDFSk
+https://ryuliah.netlify.app/
